@@ -1,0 +1,94 @@
+/* 
+COLOR PALETTE sourced from https://coolors.co:
+Primary:
+Prussian Blue (font): #212D40
+Lavender Web (background): #e5e1ee 
+
+Other colors referenced: 
+Light Cyan: #dffdff    (light blue shade)
+Pale Cerulean: #90bede,   (stronger bluish shade)
+Aquamarine: #68edc6,      (aqua blue)   
+Electric Blue: #90f3ff       
+*/
+
+/* <!-- Global styles -->   */
+* {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   line-height: 18px;
+   padding: 0;
+}
+body {
+    color: #212D40;
+    background: #e5e1ee;
+}
+a {
+    color: #212D40;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* <!-- Navigation Menu section --> */
+.menu {
+    list-style-type: none;
+    padding:0;
+    display: flex;
+    justify-content:right;
+}
+.menu a {
+    padding: 15px;    /* For accessibility */ 
+}
+
+/* <!-- About Me / Profile section --> */
+.profile {
+    display: flex;
+    justify-content:center;
+}
+
+/* <!-- Work or Projects/Portfolio section --> */
+.projects-section {
+    display: flex;
+    justify-content: center;
+}
+.projects-section:first-of-type {
+    flex-direction: row;
+}    
+img {
+    width: 300px;
+    opacity: 0.75;
+    box-shadow: 0 0 50px rgb(0 0 0 / 75%) inset;
+}
+img:hover {
+    opacity: 1;
+} 
+
+/*  <!--  Footer or Contact section -->  */
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+}
+.contact-list a {
+    padding: 15px;     /* For accessibility */ 
+    display: inline-block;
+    
+}
+
+/* Responsive */
+@media screen and (max-width: 580px) {
+    .menu {
+        display: grid;
+        justify-content: center;
+        
+}
+@media screen and (max-width: 915px) {
+    .projects-section {
+        display: grid;
+        
+}
+@media screen and (max-width: 580px) {
+        .contact-list {
+            display: grid;
+           
+}
